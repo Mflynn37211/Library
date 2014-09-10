@@ -1,7 +1,7 @@
 class Category < ActiveRecord::Base
+has_many :categorizations
+has_many :books, through: :categorizations
 
-
-validates :book_id, presence: false
-validates :reader, presence: false
+validates :name, presence: true, uniqueness: true
 
 end
