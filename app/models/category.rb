@@ -1,5 +1,5 @@
-class Checkout < ActiveRecord::Base
-  belongs_to :book
+class Category < ActiveRecord::Base
+
 
 validates :book_id, presence: false
 validates :reader, presence: false
